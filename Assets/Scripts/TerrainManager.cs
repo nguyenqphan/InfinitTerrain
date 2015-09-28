@@ -3,9 +3,13 @@ using System.Collections;
 
 public class TerrainManager : MonoBehaviour {
 
-	public Sprite TileableImage;
+	public Sprite[] Sprites;
 	public int HorizontalTiles = 25;
 	public int VerticaleTiles = 25;
+
+	public Sprite SelecctRandomSprite(){
+		return Sprites [Random.Range(0, Sprites.Length)];
+	}
 	
 
 	// Use this for initialization
@@ -16,7 +20,7 @@ public class TerrainManager : MonoBehaviour {
 				var tile = new GameObject();
 				tile.transform.position = new Vector3(x, y, 0) + offset;
 				var spriteRenderer = tile.AddComponent<SpriteRenderer>();
-				spriteRenderer.sprite = TileableImage;
+				spriteRenderer.sprite = SelecctRandomSprite();
 				tile.name = "Terrain " + tile.transform.position;
 				tile.transform.parent = transform;
 			}
