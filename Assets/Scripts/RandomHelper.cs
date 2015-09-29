@@ -3,6 +3,10 @@ using System.Collections;
 
 public class RandomHelper  {
 	
+	public static int Range(float x, float y, int key, int range)
+	{
+		return Range ((int)x, (int)y, key, range);
+	}
 	public static int Range(int x, int y, int key, int range)
 	{
 		uint hash = (uint)key;

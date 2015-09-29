@@ -13,7 +13,7 @@ public class TerrainManager : MonoBehaviour {
 	
 	private SpriteRenderer[,] _renderers;
 	
-	public Sprite SelectRandomSprite(int x, int y, out bool isWater)
+	public Sprite SelectRandomSprite(float x, float y, out bool isWater)
 	{
 		int index = RandomHelper.Range (x, y, Key, Sprites.Length);
 		isWater = (WaterTileIndex == index);
