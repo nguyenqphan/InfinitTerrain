@@ -31,19 +31,22 @@ public class TerrainManager : MonoBehaviour {
 					(int)transform.position.y + y,
 					out isWater);
 				var animator = spriteRenderer.gameObject.GetComponent<Animator>();
-
-				if(isWater){
-
-					if(animator == null){
+				
+				if (isWater)
+				{
+					if (animator == null)
+					{
 						animator = spriteRenderer.gameObject.AddComponent<Animator>();
 						animator.runtimeAnimatorController = WaterAnimation;
 					}
-				}else{
-					if(animator != null){
+				}
+				else
+				{
+					if(animator != null)
+					{
 						GameObject.Destroy(animator);
 					}
 				}
-
 			}
 		}
 	}

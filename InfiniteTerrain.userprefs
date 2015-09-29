@@ -1,9 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TerrainManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Move.cs">
     <Files>
-      <File FileName="Assets/Scripts/TerrainManager.cs" Line="36" Column="21" />
-      <File FileName="Assets/Scripts/Move.cs" Line="25" Column="47" />
+      <File FileName="Assets/Scripts/TerrainManager.cs" Line="79" Column="1" />
+      <File FileName="Assets/Scripts/Move.cs" Line="23" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
